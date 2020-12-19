@@ -25,10 +25,10 @@
           >
           <ul class="nav-list list flex">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Студия</a>
+              <a class="nav-link current" href="./index.html">Студия</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+              <a class="nav-link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Контакты</a>
@@ -37,13 +37,19 @@
         </nav>
         <ul class="contacts-list list flex">
           <li class="item">
-            <a class="contacts-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="contacts-link header" href="mailto:info@devstudio.com">
+              <svg class="icon-envelope">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a class="contacts-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+            <a class="contacts-link header" href="tel:+380961111111"
+              ><svg class="icon-smartphone">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -232,30 +238,67 @@
     <!-- Секция футера -->
     <footer class="page-footer">
       <div class="container">
-        <a class="logo inverse" href="./index.html" lang="en"
-          ><span class="accent">Web</span>Studio</a
-        >
-        <address>
-          <ul class="contacts-footer list">
-            <li class="item">
-              <a
-                class="address-google"
-                href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="item" id="contact">
-              <a class="contacts-link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li class="item">
-              <a class="contacts-link" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <ul class="footer-block list">
+          <li class="footer-adress-part">
+            <a class="logo inverse" href="./index.html" lang="en"
+              ><span class="accent">Web</span>Studio</a
+            >
+            <address>
+              <ul class="contacts-footer list">
+                <li class="item">
+                  <a
+                    class="address-google"
+                    href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="item" id="contact">
+                  <a class="contacts-link footer" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="item">
+                  <a class="contacts-link footer" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </li>
+          <li>
+            <p class="join-title">присоединяйтесь</p>
+            <ul class="social-footer-list list flex">
+              <li class="studio-social">
+                <a class="studio-social-link link" href="">
+                  <svg class="studio-social-icon">
+                    <use href="./images/sprite.svg#icon-instagram-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="studio-social">
+                <a class="studio-social-link link" href="">
+                  <svg class="studio-social-icon">
+                    <use href="./images/sprite.svg#icon-twitter-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="studio-social">
+                <a class="studio-social-link link" href="">
+                  <svg class="studio-social-icon">
+                    <use href="./images/sprite.svg#icon-facebook-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="studio-social">
+                <a class="studio-social-link link" href="">
+                  <svg class="studio-social-icon">
+                    <use href="./images/sprite.svg#icon-linkedin-logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
